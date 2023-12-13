@@ -18,55 +18,111 @@
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,800;0,1000;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
     <style>
-        :root{
-            --primary-color: 
-        }
+      :root {
+        --accent-color: #eef279;
+        --primary-color: #262626;
+        --secondary-color: #8c8c8c;
+
+        --default-font: "Alata", sans-serif;
+      }
       body {
         margin: 0;
         padding: 0;
+        font-family: var(--default-font);
       }
 
+      h1 {
+        font-size: 55px !important;
+        text-transform: uppercase;
+        color: var(--accent-color);
+        font-weight: bolder;
+      }
+
+      h3 {
+        font-size: 18px !important;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 2;
+        font-weight: 200 !important;
+      }
+      /* homepage styling */
+      .homepage {
+        background-color: var(--primary-color);
+        color: rgba(255, 255, 255, 0.95);
+      }
+      .header {
+        padding: 140px;
+      }
       .book-cover {
-        max-width: 420px;
+        max-width: 430px;
+      }
+
+      .btn-branding {
+        border-radius: 40px;
+        font-family: var(--title-font);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 8px 18px;
+        margin-right: 15px;
+        transition: all 300ms ease-out;
+      }
+      .learn {
+        background-color: var(--secondary-color);
+      }
+      .learn:hover {
+        outline: 1px solid var(--secondary-color);
+      }
+
+      .read {
+        background-color: var(--accent-color);
+      }
+      .read:hover {
+        outline: 1px solid var(--accent-color);
+      }
+
+      @media (max-width: 990px) {
+        .header {
+          text-align: center;
+        }
       }
     </style>
   </head>
 
   <body>
-    <header>
-      <div class="row mx-0">
-        <div class="col-6 px-0">
-          <img
-            src="img.jpg"
-            alt="The Book Of Disquiet book cover"
-            class="img-fluid book-cover"
-          />
-        </div>
-        <div class="col-6">
-          <p>A life changing reading</p>
-          <h1>The Book of Disquiet</h1>
-          <h3>by Fernando Pessoa</h3>
-          <p>
-            An unique collection of short, aphoristic paragraphs. Part intimate
-            <br />
-            diary, part prose poetry, part descriptive narrative.
-          </p>
-          <a href="">Learn more</a>
-          <a
-            href="https://www.google.com.py/books/edition/The_Book_of_Disquiet/fbVEDgAAQBAJ?hl=es-419&gbpv=1&dq=book+of+disquiet&printsec=frontcover"
-            target="_blank"
-            >Read a free sample</a
-          >
-        </div>
+    <section class="homepage row mx-0">
+      <div class="col-lg-7 px-5 header">
+        <h1>The Book of Disquiet</h1>
+        <h3 class="pb-5">by Fernando Pessoa</h3>
+        <p class="pb-4">
+          An unique collection of short, aphoristic paragraphs. <br />
+          Part intimate diary, part prose poetry, part descriptive narrative.
+        </p>
+        <a href="" class="btn btn-branding learn">Learn more</a>
+        <a
+          href="https://www.google.com.py/books/edition/The_Book_of_Disquiet/fbVEDgAAQBAJ?hl=es-419&gbpv=1&dq=book+of+disquiet&printsec=frontcover"
+          target="_blank"
+          class="btn btn-branding read"
+          >Read a free sample</a
+        >
       </div>
-    </header>
+      <div class="col-lg-5 mx-0 px-0 d-none d-lg-block">
+        <img
+          src="img.jpg"
+          alt="The Book Of Disquiet book cover"
+          class="img-fluid book-cover float-end"
+        />
+      </div>
+    </section>
   </body>
 </html>
-
-<!-- font-family: 'EB Garamond', serif;
-font-family: 'Mulish', sans-serif; -->
