@@ -49,7 +49,7 @@
         font-weight: bolder;
       }
       h2 {
-        font-size: 45px !important;
+        font-size: 40px !important;
         color: var(--accent-color);
         text-transform: uppercase;
       }
@@ -100,6 +100,13 @@
           text-align: center;
         }
       }
+      @media (max-width: 500px) {
+        .btn-branding {
+          font-size: 12px !important;
+          padding: 6px 12px;
+          margin-right: 4px;
+        }
+      }
       /* about section styling */
       .about {
         margin-block: 30px !important;
@@ -114,6 +121,15 @@
         text-transform: uppercase;
         padding-inline: 8px;
         font-weight: bold;
+      }
+      @media (max-width: 500px) {
+        .description {
+          font-size: 14px;
+          padding-inline: 18px !important ;
+        }
+        .description strong {
+          padding-inline: 4px;
+        }
       }
     </style>
   </head>
