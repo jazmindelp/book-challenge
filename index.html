@@ -38,6 +38,8 @@
         margin: 0;
         padding: 0;
         font-family: var(--default-font);
+        color: #fff;
+        background-color: var(--primary-color);
       }
 
       h1 {
@@ -45,6 +47,11 @@
         text-transform: uppercase;
         color: var(--accent-color);
         font-weight: bolder;
+      }
+      h2 {
+        font-size: 45px !important;
+        color: var(--accent-color);
+        text-transform: uppercase;
       }
 
       h3 {
@@ -57,10 +64,7 @@
         font-weight: 200 !important;
       }
       /* homepage styling */
-      .homepage {
-        background-color: var(--primary-color);
-        color: rgba(255, 255, 255, 0.95);
-      }
+
       .header {
         padding: 140px;
       }
@@ -96,6 +100,21 @@
           text-align: center;
         }
       }
+      /* about section styling */
+      .about {
+        margin-block: 30px !important;
+      }
+      .description {
+        margin: auto;
+        line-height: 3;
+      }
+      .description strong {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+        text-transform: uppercase;
+        padding-inline: 8px;
+        font-weight: bold;
+      }
     </style>
   </head>
 
@@ -123,6 +142,19 @@
           class="img-fluid book-cover float-end"
         />
       </div>
+    </section>
+    <section class="about text-center m-5 rounded py-5">
+      <h2 class="py-4">About the book</h2>
+      <p class="description px-5">
+        When Pessoa died in 1935, he left behind a trunk filled with unfinished
+        and unpublished writings, among which were the remarkable pages that
+        make up his posthumous masterpiece
+        <strong>The Book of Disquiet</strong> <br />
+
+        This perpetually unclassifiable and unfinished book of self-reflective
+        fragments was first published in Portuguese in 1982, and grapples with
+        all the eternal questions.
+      </p>
     </section>
   </body>
 </html>
