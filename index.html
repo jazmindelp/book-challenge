@@ -114,6 +114,7 @@
       /* about section styling */
       .about {
         margin-block: 30px !important;
+        padding: 100px 0;
       }
       .description {
         margin: auto;
@@ -126,6 +127,12 @@
         padding-inline: 8px;
         font-weight: bold;
       }
+
+      .about img {
+        opacity: 0.85;
+        max-height: 470px;
+      }
+
       @media (max-width: 500px) {
         .description {
           font-size: 14px;
@@ -203,20 +210,31 @@
         />
       </div>
     </section>
-    <section class="about text-center m-5 rounded py-5">
-      <h2 class="py-4">About the book</h2>
-      <p class="description px-5">
-        When Pessoa died in 1935, he left behind a trunk filled with unfinished
-        and unpublished writings, among which were the remarkable pages that
-        make up his posthumous masterpiece
-        <strong>The Book of Disquiet</strong> <br />
+    <section class="about text-center m-5 rounded">
+      <div class="row justify-content-evenly align-items-center">
+        <div class="col-lg-4 ms-5 pe-0">
+          <img
+            src="about-pessoa.jpg"
+            alt=""
+            class="img-fluid d-none d-lg-block ms-5"
+          />
+        </div>
+        <div class="col-lg-6 px-0">
+          <h2 class="pb-4">About the book</h2>
+          <p class="description px-5">
+            When Pessoa died in 1935, he left behind a trunk filled with
+            unfinished and unpublished writings, among which were the remarkable
+            pages that make up his posthumous masterpiece
+            <strong>The Book of Disquiet</strong> <br />
 
-        This perpetually unclassifiable and unfinished book of self-reflective
-        fragments was first published in Portuguese in 1982, and grapples with
-        all the eternal questions.
-      </p>
+            This perpetually unclassifiable and unfinished book of
+            self-reflective fragments was first published in Portuguese in 1982,
+            and grapples with all the eternal questions.
+          </p>
+        </div>
+      </div>
     </section>
-    <section class="reviews">
+    <section class="reviews py-5 mb-5">
       <h2 class="py-4 text-center">What the readers say</h2>
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -302,5 +320,6 @@
         </button>
       </div>
     </section>
+    <section class="quotes"></section>
   </body>
 </html>
