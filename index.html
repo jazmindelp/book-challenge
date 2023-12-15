@@ -149,16 +149,23 @@
       }
       .review-card {
         background-color: var(--secondary-color);
-        width: 55%;
-        min-height: 270px;
-        padding: 50px;
+        width: 100%;
         color: black;
       }
+      .review-container {
+        max-width: 55%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 400px;
+      }
+
       .carousel-control-next {
-        margin-right: 10%;
+        margin-right: 3%;
       }
       .carousel-control-prev {
-        margin-left: 10%;
+        margin-left: 3%;
       }
       i {
         color: var(--accent-color);
@@ -240,63 +247,77 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
             <div class="review-card mx-auto rounded">
-              <p class="review-content">
-                <i class="fa-solid fa-quote-left"></i>This memorable book, is
-                rare and delicious, filled with vivid descriptions, evocative
-                language, and refined reflections.<i
-                  class="fa-solid fa-quote-right"
-                ></i>
-              </p>
-              <p class="text-muted text-end">Bill Kerwin</p>
+              <div class="review-container">
+                <p class="review-content">
+                  <i class="fa-solid fa-quote-left"></i>This memorable book, is
+                  rare and delicious, filled with vivid descriptions, evocative
+                  language, and refined reflections.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+                <p class="text-muted text-end">Bill Kerwin</p>
+              </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="9000">
             <div class="review-card mx-auto rounded">
-              <p class="review-content">
-                <i class="fa-solid fa-quote-left"></i>The Book of Disquiet was
-                left in a trunk which might never have been opened. The gods
-                must be thanked that it was. I love this strange work of fiction
-                and I love the inventive, hard-drinking, modest man who wrote it
-                in obscurity.<i class="fa-solid fa-quote-right"></i>
-              </p>
-              <p class="text-muted text-end">Independent</p>
+              <div class="review-container">
+                <p class="review-content">
+                  <i class="fa-solid fa-quote-left"></i>The Book of Disquiet was
+                  left in a trunk which might never have been opened. The gods
+                  must be thanked that it was. I love this strange work of
+                  fiction and I love the inventive, hard-drinking, modest man
+                  who wrote it in obscurity.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+                <p class="text-muted text-end">Independent</p>
+              </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">
             <div class="review-card mx-auto rounded">
-              <p class="review-content">
-                <i class="fa-solid fa-quote-left"></i>A Modernist touchstone...
-                no one has explored alternative selves with Pessoa’s mixture of
-                determination and abandon... In a time which celebrates fame,
-                success, stupidity, convenience and noise, here is the perfect
-                antidote, a hymn of praise to obscurity, failure, intelligence,
-                difficulty, and silence.<i class="fa-solid fa-quote-right"></i>
-              </p>
-              <p class="text-muted text-end">The Daily Telegraph</p>
+              <div class="review-container">
+                <p class="review-content">
+                  <i class="fa-solid fa-quote-left"></i>A Modernist
+                  touchstone... no one has explored alternative selves with
+                  Pessoa’s mixture of determination and abandon... In a time
+                  which celebrates fame, success, stupidity, convenience and
+                  noise, here is the perfect antidote, a hymn of praise to
+                  obscurity, failure, intelligence, difficulty, and silence.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+                <p class="text-muted text-end">The Daily Telegraph</p>
+              </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="5000">
             <div class="review-card mx-auto rounded">
-              <p class="review-content">
-                <i class="fa-solid fa-quote-left"></i>Extraordinary—a haunting
-                mosaic of dreams, autobiographical vignettes, shards of literary
-                theory and criticisms and maxims.<i
-                  class="fa-solid fa-quote-right"
-                ></i>
-              </p>
-              <p class="text-muted text-end">George Steiner</p>
+              <div class="review-container">
+                <p class="review-content">
+                  <i class="fa-solid fa-quote-left"></i>Extraordinary—a haunting
+                  mosaic of dreams, autobiographical vignettes, shards of
+                  literary theory and criticisms and maxims.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+                <p class="text-muted text-end">George Steiner</p>
+              </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="5000">
             <div class="review-card mx-auto rounded">
-              <p class="review-content">
-                <i class="fa-solid fa-quote-left"></i>A reading experience like
-                no other. It is thrilling, confusing, upsetting, joyous, tedious
-                and profound. You will never forget it, or stop wanting to
-                return to it.
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
-              <p class="text-muted text-end">The New Statesman</p>
+              <div class="review-container">
+                <p class="review-content">
+                  <i class="fa-solid fa-quote-left"></i>A reading experience
+                  like no other. It is thrilling, confusing, upsetting, joyous,
+                  tedious and profound. You will never forget it, or stop
+                  wanting to return to it.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <p class="text-muted text-end">The New Statesman</p>
+              </div>
             </div>
           </div>
         </div>
