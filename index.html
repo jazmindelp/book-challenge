@@ -202,6 +202,10 @@
         opacity: 0.85 !important;
       }
 
+      .quotes i {
+        padding-inline: 4px;
+      }
+
       .quote-container,
       .quote-title {
         background-color: rgba(13, 13, 13, 0.85);
@@ -216,6 +220,18 @@
           font-size: 14px !important;
         }
       }
+
+      /* footer styling */
+      footer {
+        padding-top: 40px;
+      }
+      footer p {
+        font-size: 14px !important;
+      }
+
+      footer a {
+        color: var(--accent-color);
+      }
     </style>
   </head>
 
@@ -228,7 +244,7 @@
           An unique collection of short, aphoristic paragraphs. <br />
           Part intimate diary, part prose poetry, part descriptive narrative.
         </p>
-        <a href="" class="btn btn-branding learn">Learn more</a>
+        <a href="#about" class="btn btn-branding learn">Learn more</a>
         <a
           href="https://www.google.com.py/books/edition/The_Book_of_Disquiet/fbVEDgAAQBAJ?hl=es-419&gbpv=1&dq=book+of+disquiet&printsec=frontcover"
           target="_blank"
@@ -244,7 +260,7 @@
         />
       </div>
     </section>
-    <section class="about text-center m-5 rounded">
+    <section class="about text-center m-5 rounded" id="about">
       <div class="row justify-content-evenly align-items-center">
         <div class="col-lg-4 ms-5 pe-0">
           <img
@@ -369,10 +385,7 @@
       </div>
     </section>
     <section class="quotes">
-      <h2 class="text-center pb-4">
-        Memorable quotes from <br />
-        The Book of Disquiet
-      </h2>
+      <h2 class="text-center pb-4">Memorable quotes</h2>
 
       <div class="row justify-content-center">
         <div class="col-lg-2 p-0 quote-container">
@@ -428,5 +441,19 @@
         </div>
       </div>
     </section>
+    <footer>
+      <p class="text-center">
+        Coded by
+        <a
+          href="https://www.linkedin.com/in/jazm%C3%ADn-del-puerto-61397222a/"
+          target="_blank"
+          >Jazmín Del Puerto</a
+        >
+        and open-sourced on
+        <a href="https://github.com/jazmindelp/book-challenge" target="_blank"
+          >Github</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
