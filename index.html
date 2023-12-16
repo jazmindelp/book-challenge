@@ -190,6 +190,32 @@
           font-size: 16px !important;
         }
       }
+      /* quote section styling */
+      .quotes {
+        overflow-x: hidden;
+        padding-bottom: 40px;
+      }
+      .quotes p {
+        margin: 0;
+      }
+      .quotes img:hover {
+        opacity: 0.85 !important;
+      }
+
+      .quote-container,
+      .quote-title {
+        background-color: rgba(13, 13, 13, 0.85);
+      }
+
+      .quote-container:hover {
+        background-color: rgb(13, 13, 13);
+      }
+
+      @media (max-width: 1095px) {
+        .quotes p {
+          font-size: 14px !important;
+        }
+      }
     </style>
   </head>
 
@@ -342,6 +368,65 @@
         </button>
       </div>
     </section>
-    <section class="quotes"></section>
+    <section class="quotes">
+      <h2 class="text-center pb-4">
+        Memorable quotes from <br />
+        The Book of Disquiet
+      </h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-2 p-0 quote-container">
+          <img src="pessoa1.jpg" alt="" class="img-fluid d-none d-lg-block" />
+        </div>
+        <div class="col-lg-3 d-flex align-items-center p-5 quote-container">
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            The only advantage of studying is to take delight in all the things
+            that other people haven't said.
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+
+        <div class="col-lg-3 d-flex align-items-center p-5 quote-container">
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            I begin because I don't have the strength to think; I finish because
+            I don't have the courage to quit. This book is my cowardice.
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+
+        <div class="col-lg-3 d-flex align-items-center p-5 quote-container">
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            Yes, what I am would be unbereable if I couldn't remember what I've
+            been.
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 d-flex align-items-center p-5 quote-container">
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            If there's any justice in the God's injustice, then may they let us
+            keep our dreams, even when they're impossible, and may our dreams be
+            happy, even when they're trivial.
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+        <div class="col-3 px-0 quote-container">
+          <img src="pessoa-id.jpg" alt="" class="img-fluid d-none d-lg-block" />
+        </div>
+        <div class="col-lg-3 d-flex align-items-center p-5 quote-container">
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            Wise is the man who monotonizes his existence, for then each minor
+            incident seems a marvel.
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
