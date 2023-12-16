@@ -38,6 +38,9 @@
 
         --default-font: "Alata", sans-serif;
       }
+      html {
+        scroll-behavior: smooth !important;
+      }
       body {
         margin: 0;
         padding: 0;
@@ -67,6 +70,7 @@
         line-height: 2;
         font-weight: 200 !important;
       }
+
       /* homepage styling */
 
       .header {
@@ -231,6 +235,18 @@
 
       footer a {
         color: var(--accent-color);
+      }
+
+      .navbar {
+        background-color: var(--primary-color) !important;
+        box-shadow: rgba(249, 249, 250, 0.04) 0px 1px 0px,
+          rgba(245, 243, 243, 0.25) 0px 1px 0px inset;
+      }
+      .navbar a {
+        color: white !important;
+      }
+      .navbar a:hover {
+        color: var(--accent-color) !important;
       }
     </style>
   </head>
